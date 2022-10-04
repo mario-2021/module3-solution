@@ -1,0 +1,73 @@
+:root {
+    --dark-color: #292220;
+    --pink-color: #f8ab8d;
+    --yellow-color: #f3dd69;
+    --green-color: #d2de8f;
+    --gray-color: #99aab5;
+    --font-color: #6d2d41;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-color);
+    color: var(--pink-color);
+}
+
+.navbar .nav .main {
+    color: var(--pink-color);
+    display: none;
+}
+
+.navbar .nav .navbar-nav .nav-item {
+    color: var(--pink-color);
+    font-weight: 500;
+}
+
+.landing {
+    margin-left: auto;
+    padding: 0;
+}
+
+.landing .firstParagraph,
+.landing .secondParagraph,
+.landing .thirdParagraph {
+    background-color: var(--green-color);
+    color: var(--dark-color);
+}
+
+.landing .firstParagraph h3,
+.landing .secondParagraph h3,
+.landing .thirdParagraph h3 {
+    color: var(--font-color);
+}
+
+.landing .firstParagraph p,
+.landing .secondParagraph p,
+.landing .thirdParagraph p {
+    line-height: 1.5rem;
+}
+
+.landing .firstParagraph a,
+.landing .secondParagraph a,
+.landing .thirdParagraph a {
+    color: var(--font-color);
+    cursor: pointer;
+    font-style: italic;
+}
+
+@media (max-width: 767px) {
+    .navbar .nav .main {
+    display: block;
+    }
+
+    
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar .nav .main {
+    display: block;
+    }
+}
